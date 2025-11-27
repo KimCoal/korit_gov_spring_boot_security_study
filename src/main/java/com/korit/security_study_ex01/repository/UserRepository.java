@@ -17,6 +17,9 @@ public class UserRepository {
     public Optional<User> findUserByUsername(String username) {
         return userMapper.findUserByUsername(username);
     }
+    public Optional<User> findUserByUserId(Integer userId) {
+        return userMapper.findUserByUserId(userId);
+    }
 
     public Optional<User> addUser (User user) {
         try {

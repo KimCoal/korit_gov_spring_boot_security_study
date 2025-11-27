@@ -1,4 +1,4 @@
-package com.korit.security_study_ex01;
+package com.korit;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

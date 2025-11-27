@@ -8,5 +8,6 @@ import java.util.Optional;
 @Mapper
 public interface UserMapper {
     Optional<User> findUserByUsername (String username);
+    Optional<User> findUserByUserId (Integer userId);
     int addUser(User user);
 }
