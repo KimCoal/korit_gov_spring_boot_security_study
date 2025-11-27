@@ -1,4 +1,4 @@
-package com.korit.security_study.entity;
+package com.korit.security_study_ex01.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Role {
+public class UserRole {
+    private Integer userRoleId;
+    private Integer userId;
     private Integer roleId;
-    private String roleName;
-    private String roleNameKor;
+
+    private Role role;
 }

@@ -1,8 +1,7 @@
-package com.korit.security_study.repository;
+package com.korit.security_study_ex01.repository;
 
-import com.korit.security_study.dto.SignUpReqDto;
-import com.korit.security_study.entity.User;
-import com.korit.security_study.mapper.UserMapper;
+import com.korit.security_study_ex01.entity.User;
+import com.korit.security_study_ex01.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Repository;

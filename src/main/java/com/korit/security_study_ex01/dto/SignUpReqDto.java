@@ -1,6 +1,6 @@
-package com.korit.security_study.dto;
+package com.korit.security_study_ex01.dto;
 
-import com.korit.security_study.entity.User;
+import com.korit.security_study_ex01.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

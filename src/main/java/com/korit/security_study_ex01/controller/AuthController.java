@@ -1,7 +1,7 @@
-package com.korit.security_study.controller;
+package com.korit.security_study_ex01.controller;
 
-import com.korit.security_study.dto.SignUpReqDto;
-import com.korit.security_study.service.AuthService;
+import com.korit.security_study_ex01.dto.SignUpReqDto;
+import com.korit.security_study_ex01.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

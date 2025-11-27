@@ -1,11 +1,11 @@
-package com.korit.security_study.service;
+package com.korit.security_study_ex01.service;
 
-import com.korit.security_study.dto.ApiRespDto;
-import com.korit.security_study.dto.SignUpReqDto;
-import com.korit.security_study.entity.User;
-import com.korit.security_study.entity.UserRole;
-import com.korit.security_study.repository.UserRepository;
-import com.korit.security_study.repository.UserRoleRepository;
+import com.korit.security_study_ex01.dto.ApiRespDto;
+import com.korit.security_study_ex01.dto.SignUpReqDto;
+import com.korit.security_study_ex01.entity.User;
+import com.korit.security_study_ex01.entity.UserRole;
+import com.korit.security_study_ex01.repository.UserRepository;
+import com.korit.security_study_ex01.repository.UserRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

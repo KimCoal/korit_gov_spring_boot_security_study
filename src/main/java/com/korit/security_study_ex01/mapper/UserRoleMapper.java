@@ -1,6 +1,6 @@
-package com.korit.security_study.mapper;
+package com.korit.security_study_ex01.mapper;
 
-import com.korit.security_study.entity.UserRole;
+import com.korit.security_study_ex01.entity.UserRole;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

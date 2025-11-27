@@ -1,4 +1,4 @@
-package com.korit.security_study.entity;
+package com.korit.security_study_ex01.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;

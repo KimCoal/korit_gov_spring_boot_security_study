@@ -1,8 +1,7 @@
-package com.korit.security_study.dto;
+package com.korit.security_study_ex01.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 
 @Data
 @AllArgsConstructor

@@ -1,4 +1,4 @@
-package com.korit.security_study.config;
+package com.korit.security_study_ex01.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

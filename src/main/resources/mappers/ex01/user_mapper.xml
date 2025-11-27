@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.korit.security_study.mapper.UserMapper">
-    <resultMap id="UserResultMap" type="com.korit.security_study.entity.User">
+<mapper namespace="com.korit.security_study_ex01.mapper.UserMapper">
+    <resultMap id="UserResultMap" type="com.korit.security_study_ex01.entity.User">
         <id property="userId" column="user_id"/>
         <result property="username" column="username" />
         <result property="password" column="password" />
@@ -11,13 +11,13 @@
         <result property="updateDt" column="update_dt" />
         <collection property="userRoles" resultMap="UserRoleMap"/>
     </resultMap>
-    <resultMap id="UserRoleMap" type="com.korit.security_study.entity.UserRole">
+    <resultMap id="UserRoleMap" type="com.korit.security_study_ex01.entity.UserRole">
         <id property="userRoleId" column="user_role_id"/>
         <result property="userId" column="urt_user_id"/>
         <result property="roleId" column="urt_role_id"/>
         <association property="role" resultMap="RoleResultMap"/>
     </resultMap>
-    <resultMap id="RoleResultMap" type="com.korit.security_study.entity.Role">
+    <resultMap id="RoleResultMap" type="com.korit.security_study_ex01.entity.Role">
         <id property="roleId" column="role_id"/>
         <result property="roleName" column="role_name"/>
         <result property="roleNameKor" column="role_name_kor"/>
