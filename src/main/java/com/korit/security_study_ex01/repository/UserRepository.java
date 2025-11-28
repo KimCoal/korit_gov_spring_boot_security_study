@@ -1,5 +1,6 @@
 package com.korit.security_study_ex01.repository;
 
+import com.korit.security_study_ex01.dto.ModifyPasswordReqDto;
 import com.korit.security_study_ex01.entity.User;
 import com.korit.security_study_ex01.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +29,9 @@ public class UserRepository {
             return Optional.empty();
         }
         return Optional.of(user);
+    }
+
+    public int modifyPassword(User user) {
+        return userMapper.modifyPassword(user);
     }
 }
