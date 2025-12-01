@@ -21,6 +21,9 @@ public class UserRepository {
     public Optional<User> findUserByUserId(Integer userId) {
         return userMapper.findUserByUserId(userId);
     }
+    public Optional<User> findUserByEmail(String email) {
+        return userMapper.findUserByEmail(email);
+    }
 
     public Optional<User> addUser (User user) {
         try {
