@@ -1,10 +1,12 @@
 package com.korit.security_study_ex01.service;
 
 import com.korit.security_study_ex01.dto.ApiRespDto;
+import com.korit.security_study_ex01.dto.OAuth2MergeReqDto;
 import com.korit.security_study_ex01.dto.SignUpReqDto;
 import com.korit.security_study_ex01.dto.SigninReqDto;
 import com.korit.security_study_ex01.entity.User;
 import com.korit.security_study_ex01.entity.UserRole;
+import com.korit.security_study_ex01.repository.OAuth2UserRepository;
 import com.korit.security_study_ex01.repository.UserRepository;
 import com.korit.security_study_ex01.repository.UserRoleRepository;
 import com.korit.security_study_ex01.security.jwt.JwtUtils;
@@ -28,6 +30,8 @@ public class AuthService {
 
     @Autowired
     private UserRoleRepository userRoleRepository;
+    @Autowired
+    private OAuth2UserRepository oAuth2UserRepository;
 
     public ApiRespDto<?> addUser(SignUpReqDto signUpReqDto) {
         // username 중복확인
