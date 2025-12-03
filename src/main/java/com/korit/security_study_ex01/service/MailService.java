@@ -65,7 +65,7 @@ public class MailService {
         return new ApiRespDto<>("success", "인증메일이 전송되었습니다", null);
     }
 
-    public Map<String, Object> verify(String token) {
+    public Map<String, Object>  verify(String token) {
         Claims claims = null;
         Map<String, Object> resultMap = null;
 
